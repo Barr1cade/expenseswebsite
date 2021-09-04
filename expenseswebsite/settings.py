@@ -43,7 +43,7 @@ INSTALLED_APPS = [
 
     'userpreferences',
     'expenses',
-    'userincome'
+    'userincome',
 ]
 
 MIDDLEWARE = [
