@@ -44,6 +44,8 @@ INSTALLED_APPS = [
     'userpreferences',
     'expenses',
     'userincome',
+
+    # test
 ]
 
 MIDDLEWARE = [
