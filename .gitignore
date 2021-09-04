@@ -1,0 +1,9 @@
+*.log
+*.pot
+*.pyc
+*.env
+__pycache__/
+settings.py
+media
+.env
+wsgi.py
