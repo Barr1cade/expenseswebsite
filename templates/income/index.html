@@ -10,17 +10,17 @@
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
           <li class="breadcrumb-item">
-            <a href="">Expenses</a>
+            <a href="">Расходы</a>
           </li>
           <li class="breadcrumb-item active" aria-current="page">
-            Income
+            Поступления
           </li>
         </ol>
       </nav>
     </div>
 
     <div class="col-md-2">
-      <a href="{% url 'add-income'%}" class="btn btn-primary">Add Income</a>
+      <a href="{% url 'add-income'%}" class="btn btn-primary">Добавить доход</a>
     </div>
   </div>
 
@@ -42,10 +42,10 @@
       <table class="table table-stripped table-hover">
         <thead>
           <tr>
-            <th>Amount ({{currency}})</th>
-            <th>Source</th>
-            <th>Source</th>
-            <th>Date</th>
+            <th>Количество ({{currency}})</th>
+            <th>Источник</th>
+            <th>Описание</th>
+            <th>Дата</th>
             <th></th>
           </tr>
         </thead>
@@ -62,7 +62,7 @@
               <a
               href="{% url 'income-edit' income.id  %}"
               class="btn btn-secondary btn-sm"
-              >Edit</a>
+              >Редактирование</a>
             </td>
           </tr>
 
@@ -78,10 +78,10 @@
       <table class="table table-stripped table-hover">
         <thead>
           <tr>
-            <th>Amount ({{currency}})</th>
-            <th>Source</th>
-            <th>Description</th>
-            <th>Date</th>
+            <th>Количество ({{currency}})</th>
+            <th>Источник</th>
+            <th>Описание</th>
+            <th>Дата</th>
             <th></th>
           </tr>
         </thead>
@@ -103,11 +103,11 @@
       <ul class="pagination align-right float-right mr-auto">
         {% if page_obj.has_previous %}
         <li {% if page_obj.number == 1 %} class="page-item active" {% endif %}><a class="page-link" href="?page=1">&laquo; 1</a></li>
-        <li class="page-item"> <a class="page-link" href="?page={{ page_obj.previous_page_number }}">Previous</a></li>
+        <li class="page-item"> <a class="page-link" href="?page={{ page_obj.previous_page_number }}">Предыдущая</a></li>
         {% endif %}
 
         {% if page_obj.has_next %}
-        <li class="page-item"> <a class="page-link" href="?page={{ page_obj.next_page_number }}">Next</a></li>
+        <li class="page-item"> <a class="page-link" href="?page={{ page_obj.next_page_number }}">Следующая</a></li>
         <li class="page-item"> <a class="page-link" href="?page={{ page_obj.paginator.num_pages }}">{{ page_obj.paginator.num_pages}} &raquo;</a></li>
         {% endif %}
 

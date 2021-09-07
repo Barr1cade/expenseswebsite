@@ -6,9 +6,9 @@
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
             <li class="breadcrumb-item">
-                <a href="{ url 'income' }">Income</a>
+                <a href="{ url 'income' }">Поступление</a>
             </li>
-            <li class="breadcrumb-item active" aria-current="page">Add Income</li>
+            <li class="breadcrumb-item active" aria-current="page">Добавить поступление</li>
         </ol>
     </nav>
 
@@ -27,7 +27,7 @@
                             value="{{values.amount}}">
                 </div>
                 <div class="form-group">
-                    <label>Description</label>
+                    <label>Описание</label>
                     <input
                             type="text"
                             class="form-control form-control-sm"
@@ -35,7 +35,7 @@
                             value="{{values.description}}">
                 </div>
                 <div class="form-group">
-                    <label>Sources</label>
+                    <label>Источник</label>
                     <select class="form-control" name="source">
                         {% for source in sources %}
                         <option name="source" value="{{ source.name }}">
@@ -45,7 +45,7 @@
                     </select>
                 </div>
                 <div class="form-group">
-                    <label>Date of Income</label>
+                    <label>Дата</label>
                     <input
                             type="date"
                             class="form-control form-control-sm"

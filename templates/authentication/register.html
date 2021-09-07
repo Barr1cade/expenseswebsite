@@ -9,7 +9,7 @@
         <div class="card mt-5">
             <div class="card-body">
                 <div class="card-title py-3">
-                    <h4>Register for a free account.</h4>
+                    <h4>Регистрация аккаунта.</h4>
                 </div>
 
                 <form action="{% url 'register' %}" method="post">
@@ -46,13 +46,13 @@
                                placeholder="password"
                                id="passwordField"
                                class="form-control form-control-sm">
-                        <small class="float-right py-3 showPasswordToggle">SHOW</small>
+                        <small class="float-right py-3 showPasswordToggle">Показать</small>
                     </div>
                     <input type="submit" value="Register" class="btn btn-block btn-primary submit-btn">
                 </form>
                 <div class="container" >
-                    <span class="text-lead lead" style="font-size:12px">Have an account?</span><a href="{% url 'login' %}" style="font-size:12px"> Login</a><br>
-                    <span class="text-lead lead" style="font-size:12px">Did you forgot the Password?</span><a href="{% url 'request-password' %}" style="font-size:12px"> Reset it</a>
+                    <span class="text-lead lead" style="font-size:12px">Уже есть аккаунт?</span><a href="{% url 'login' %}" style="font-size:12px"> Войти</a><br>
+                    <span class="text-lead lead" style="font-size:12px">Забыли пароль?</span><a href="{% url 'request-password' %}" style="font-size:12px"> Сброс пароля</a>
                 </div>
             </div>
         </div>

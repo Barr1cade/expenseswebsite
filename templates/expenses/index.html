@@ -8,17 +8,17 @@
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
           <li class="breadcrumb-item">
-            <a href="">Expenses</a>
+            <a href="">Расходы</a>
           </li>
           <li class="breadcrumb-item active" aria-current="page">
-            My Expenses
+            Мои расходы
           </li>
         </ol>
       </nav>
     </div>
 
     <div class="col-md-2">
-      <a href="{% url 'add-expense'%}" class="btn btn-primary">Add Expense</a>
+      <a href="{% url 'add-expense'%}" class="btn btn-primary">Добавить расходы</a>
     </div>
   </div>
 
@@ -29,7 +29,7 @@
     <div class="form-horizontal row">
        <div class="col-sm-3">
         <a href="{% url 'export-pdf' %}" class="btn btn-primary">
-          Export PDF
+          Экспорт в PDF
         </a>
        </div>
         <div class="form-group col-sm-3 mx-auto">
@@ -42,16 +42,16 @@
         <thead>
           <tr>
             {% if currency %}
-              <th>Amount ({{currency}})</th>
-              <th>Category</th>
-              <th>Description</th>
-              <th>Date</th>
+              <th>Сумма ({{currency}})</th>
+              <th>Категория</th>
+              <th>Описание</th>
+              <th>Дата</th>
               <th></th>
             {% else %}
-              <th>Amount</th>
-              <th>Category</th>
-              <th>Description</th>
-              <th>Date</th>
+              <th>Сумма</th>
+              <th>Категория</th>
+              <th>Описание</th>
+              <th>Дата</th>
               <th></th>
             {% endif %}
           </tr>
@@ -69,7 +69,7 @@
               <a
               href="{% url 'expense-edit' expense.id  %}"
               class="btn btn-secondary btn-sm"
-              >Edit</a
+              >Редактирование</a
               >
             </td>
           </tr>
@@ -86,10 +86,10 @@
       <table class="table table-stripped table-hover">
         <thead>
           <tr>
-            <th>Amount ({{currency}})</th>
-            <th>Category</th>
-            <th>Description</th>
-            <th>Date</th>
+            <th>Сумма ({{currency}})</th>
+            <th>Категория</th>
+            <th>Описание</th>
+            <th>Дата</th>
             <th></th>
           </tr>
         </thead>
@@ -106,16 +106,16 @@
 
     <div class="pagination-container">
       <div class="">
-        Showing page {{page_obj.number}} of {{ page_obj.paginator.num_pages }}
+        Показана страница {{page_obj.number}} из {{ page_obj.paginator.num_pages }}
       </div>
       <ul class="pagination align-right float-right mr-auto">
         {% if page_obj.has_previous %}
         <li {% if page_obj.number == 1 %} class="page-item active" {% endif %}><a class="page-link" href="?page=1">&laquo; 1</a></li>
-        <li class="page-item"> <a class="page-link" href="?page={{ page_obj.previous_page_number }}">Previous</a></li>
+        <li class="page-item"> <a class="page-link" href="?page={{ page_obj.previous_page_number }}">Предыдущая</a></li>
         {% endif %}
 
         {% if page_obj.has_next %}
-        <li class="page-item"> <a class="page-link" href="?page={{ page_obj.next_page_number }}">Next</a></li>
+        <li class="page-item"> <a class="page-link" href="?page={{ page_obj.next_page_number }}">Следующая</a></li>
         <li class="page-item"> <a class="page-link" href="?page={{ page_obj.paginator.num_pages }}">{{ page_obj.paginator.num_pages}} &raquo;</a></li>
         {% endif %}
 

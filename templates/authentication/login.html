@@ -9,7 +9,7 @@
         <div class="card mt-5">
             <div class="card-body">
                 <div class="card-title py-3">
-                    <h4>Login to your account.</h4>
+                    <h4>Войти в аккаунт.</h4>
                 </div>
 
                 <form action="{% url 'login' %}" method="post">
@@ -34,10 +34,10 @@
                     <input type="submit" value="Login" class="btn btn-block btn-primary submit-btn">
                 </form>
                 <div class="container">
-                    <span class="text-lead lead" style="font-size:12px">Don't have an account?</span><a
-                        href="{% url 'register' %}" style="font-size:12px"> Register</a><br>
-                    <span class="text-lead lead" style="font-size:12px">Did you forgot the Password?</span><a
-                        href="{% url 'request-password' %}" style="font-size:12px"> Reset it</a>
+                    <span class="text-lead lead" style="font-size:12px">Нет аккаунта?</span><a
+                        href="{% url 'register' %}" style="font-size:12px"> Регистрация</a><br>
+                    <span class="text-lead lead" style="font-size:12px">Вы забыли пароль?</span><a
+                        href="{% url 'request-password' %}" style="font-size:12px"> Сброс пароля</a>
                 </div>
             </div>
         </div>
