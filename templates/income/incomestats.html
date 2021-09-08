@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-10">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item">
+                        <a href="">Суммарный доход</a>
+                    </li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                        Поступления
+                    </li>
+                </ol>
+            </nav>
+        </div>
+
+        <div class="col-md-2">
+            <a href="{}" class="btn btn-primary">Домой</a>
+        </div>
+        <canvas id="myChart2" width="400" height="400"></canvas>
+
+    </div>
+</div>
+
+<script src="{% static 'js/incomestats.js' %}"></script>
+
+
+{% endblock content %}
