@@ -48,7 +48,7 @@ def index(request):
         return render(request, 'expenses/index.html', context)
     except ObjectDoesNotExist:
         categories = Category.objects.all()
-        expenses = Expense.objects.filter(owner=request.user)  # owneruser only show
+        expenses = Expense.objects.filter(owner=request.user).order_by('-date')  # owneruser only show
         paginator = Paginator(expenses, 10)
         page_number = request.GET.get('page')
         page_obj = Paginator.get_page(paginator, page_number)
