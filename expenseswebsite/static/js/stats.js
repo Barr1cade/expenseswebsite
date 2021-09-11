@@ -17,7 +17,7 @@ var myChart = new Chart(ctx, {
                 'rgba(30, 8, 140, 0.2)',
                 'rgba(232, 228, 16, 0.2);',
                 'rgba(232, 121, 16, 0.2);',
-                'rgba(16, 139, 232, 0.2);'
+                'rgba(16, 139, 232, 0.2);',
             ],
             borderColor: [
                 'rgba(255, 99, 132, 1)',
@@ -29,7 +29,7 @@ var myChart = new Chart(ctx, {
                 'rgba(30, 8, 140, 1)',
                 'rgba(232, 228, 16, 1);',
                 'rgba(232, 121, 16, 1);',
-                'rgba(16, 139, 232, 1);'
+                'rgba(16, 139, 232, 1);',
 
             ],
             borderWidth: 1
